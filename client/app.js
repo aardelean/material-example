@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Greeting from "./greetings";
-import RaisedEx from "./raised-ex";
+import Content from "./lists"
 
+const url='http://localhost/api/contacts/';
+const pollInterval=2000;
 ReactDOM.render(
- <RaisedEx name="World"/>,
+ <Content url={url} pollInterval={pollInterval}/>,
   document.body
 );
